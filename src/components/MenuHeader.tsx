@@ -9,16 +9,16 @@ const MenuHeader: FC = () => {
     <header className="flex justify-between items-center px-6 py-4 border-b border-gray-700">
       <a href="/" className="text-3xl font-bold">DiaTopia</a>
       <nav className="space-x-4 hidden sm:block">
-        <a href="/diabetes-info" className="hover:text-teal-400 p-2 border-b bg-slate-800 border-gray-400 rounded-lg transition-colors">
+        <a href="./diabetes-info" className="hover:text-teal-400 p-2 border-b bg-slate-800 border-gray-400 rounded-lg transition-colors">
           {isEnglish ? "Diabetes explained" : "Diabetes erklärt"}
         </a>
-        <a href="/pump-manufacturers" className="hover:text-teal-400  p-2 border-b bg-slate-800 border-gray-400 rounded-lg transition-colors">
+        <a href="./pump-manufacturers" className="hover:text-teal-400  p-2 border-b bg-slate-800 border-gray-400 rounded-lg transition-colors">
           {isEnglish ? "Pump Manufacturers" : "Pumpenhersteller"}
         </a>
-        <a href="/tech-innovation" className="hover:text-teal-400  p-2 border-b bg-slate-800 border-gray-400 rounded-lg transition-colors">
+        <a href="./tech-innovation" className="hover:text-teal-400  p-2 border-b bg-slate-800 border-gray-400 rounded-lg transition-colors">
           {isEnglish ? "Innovations" : "Innovationen"}
         </a>
-        <a href="/family-support" className="hover:text-teal-400  p-2 border-b bg-slate-800 border-gray-400 rounded-lg transition-colors">
+        <a href="./family-support" className="hover:text-teal-400  p-2 border-b bg-slate-800 border-gray-400 rounded-lg transition-colors">
           {isEnglish ? "Family Support" : "Angehörigenunterstützung"}
         </a>
       </nav>
