@@ -19,3 +19,12 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* This will hide content until the language is set */
+.language-loading {
+  visibility: hidden;
+}
+
+.language-loading.language-ready {
+  visibility: visible;
+}
