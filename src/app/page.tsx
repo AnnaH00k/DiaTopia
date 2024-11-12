@@ -29,7 +29,7 @@ export default function Home() {
           </p>
         </section>
 
-        {/* Informational Sections */}
+
         <section className="gap-4 grid sm:grid-cols-2 max-w-3xl">
           <a href="/diabetes-info" className="bg-gray-800 hover:shadow-gray-400 shadow-md p-6 rounded-lg">
             <h3 className="text-2xl font-semibold mb-2">
