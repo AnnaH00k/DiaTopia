@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { useLanguage } from "@/components/ClientLanguageProvider";
+import Link from "next/link";
 
 const MenuHeader: FC = () => {
   const { language, toggleLanguage } = useLanguage();
@@ -7,20 +8,20 @@ const MenuHeader: FC = () => {
 
   return (
     <header className="flex justify-between items-center px-6 py-4 border-b border-gray-700">
-      <a href="/" className="text-3xl font-bold">DiaTopia</a>
+      <Link href="/" className="text-3xl font-bold">DiaTopia</Link>
       <nav className="space-x-4 hidden sm:block">
-        <a href="./diabetes-info" className="hover:text-teal-400 p-2 border-b bg-slate-800 border-gray-400 rounded-lg transition-colors">
+        <Link href="/diabetes-info" className="hover:text-teal-400 p-2 border-b bg-slate-800 border-gray-400 rounded-lg transition-colors">
           {isEnglish ? "Diabetes explained" : "Diabetes erklärt"}
-        </a>
-        <a href="./pump-manufacturers" className="hover:text-teal-400  p-2 border-b bg-slate-800 border-gray-400 rounded-lg transition-colors">
+        </Link>
+        <Link href="/pump-manufacturers" className="hover:text-teal-400  p-2 border-b bg-slate-800 border-gray-400 rounded-lg transition-colors">
           {isEnglish ? "Pump Manufacturers" : "Pumpenhersteller"}
-        </a>
-        <a href="./tech-innovation" className="hover:text-teal-400  p-2 border-b bg-slate-800 border-gray-400 rounded-lg transition-colors">
+        </Link>
+        <Link href="/tech-innovation" className="hover:text-teal-400  p-2 border-b bg-slate-800 border-gray-400 rounded-lg transition-colors">
           {isEnglish ? "Innovations" : "Innovationen"}
-        </a>
-        <a href="./family-support" className="hover:text-teal-400  p-2 border-b bg-slate-800 border-gray-400 rounded-lg transition-colors">
+        </Link>
+        <Link href="/family-support" className="hover:text-teal-400  p-2 border-b bg-slate-800 border-gray-400 rounded-lg transition-colors">
           {isEnglish ? "Family Support" : "Angehörigenunterstützung"}
-        </a>
+        </Link>
       </nav>
       <button
         onClick={toggleLanguage}
