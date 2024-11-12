@@ -28,7 +28,7 @@ const MenuHeader: FC = () => {
         className="focus:outline-none"
       >
         <img
-          src={isEnglish ? "/flags/gb-flag.webp" : "/flags/de-flag.webp"}
+          src={isEnglish ? "/flags/gb-flag.png" : "/flags/de-flag.png"}
           alt={isEnglish ? "German Flag" : "English Flag"}
           className="w-auto h-8 p-1 border border-gray-400 bg-slate-800 rounded-lg shadow-slate-400"
         />
